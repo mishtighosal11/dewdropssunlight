@@ -1,4 +1,237 @@
+@font-face {
+    font-family: Callifornia;
+    src: url("Callifornia.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Verdana, sans-serif;
-    background-color: azure;
+    background-color: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home, .aboutus, .events, .faq {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    padding: 0 70px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-family: Callifornia;
+    font-size: 5rem;
+}
+
+.nav1, .nav2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.nav1 {
+    padding-left: 15px;
+    /* padding-right: 50px; */
+}
+
+.nav1 li a {
+    text-decoration: none;
+    color: black;
+    /* font-size: 1.2rem; */
+}
+
+.nav2 li a {
+    text-decoration: none;
+    color: black;
+    /* font-size: 1.2rem; */
+    
+}
+
+.register {
+    border: none;
+    border-radius: 15px;
+    background-color: #3FCCC4;
+    text-align: center;
+    transition: 0.3s;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    max-height: 50px;
+    /* font-weight: 500; */
+    /* margin: 4px 2px; */
+}
+
+.register:hover {
+    background-color: #41a09b;
+    color: azure;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+/* .home {
+    background-color: lightpink;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} */
+
+.aboutus {
+    /* background-color: lightseagreen;*/
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.aboutus h1 {
+    font-family: Callifornia;
+    font-size: 5rem;
+    color: green;
+}
+
+.events {
+    /* background-color: rgb(74, 240, 190);*/
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.events h1 {
+    font-family: Callifornia;
+    color: #119DA4;
+    font-size: 5rem;
+}
+
+.faq {
+    /* background-color: rgb(243, 177, 252); */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* width: auto; */
+}
+
+.faq h1{
+    font-family: Callifornia;
+    font-size: 5rem;
+    color: #08474A;
+}
+
+.homeimg1 {
+    float: right;
+    height: 250px;
+}
+
+.homeimg2 {
+    float: right;
+    height: 250px;
+    width: auto;
+}
+
+.homeimg3 {
+    float: left;
+    height: 250px;
+    width: auto;
+}
+
+.parallax {
+    min-height: 500px;
+    width: auto;
+    background-image: url(https://i.pinimg.com/564x/27/1e/cf/271ecf5d62ca09c2c6d2c30006da0050.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutuslink {
+    margin: 0 27px;
+    padding: 17px;
+    align-content: center;
+    display: block;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.linktext {
+    /* text-decoration: none; */
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #2faab1da;
+    /* color: white; */
+    padding: 13px 26px;
+    text-align: center;
+    font-family: Montserrat;
+    opacity: 0.6;
+    transition: 0.3s;
+    text-transform: uppercase;
+    /* align-content: center; */
+}
+
+.linktext a {
+    text-decoration: none;
+    color: white;
+}
+
+.linktext:hover {
+    opacity: 1;
+}
+
+.hrstyle {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.footer {
+    background-color: rgb(37, 107, 61);
+    height: 40px;
+    align-content: center;
+    text-align: center;
+}
+
+.footer p{
+    margin: 0 auto;
+    color: #f0f0f0;
+    text-align: center;
+    line-height: 1.7;
 }
